@@ -1,21 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;500&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      a {
+        font-family: "Caveat", cursive;
+      }
+      p {
+        font-family: "Caveat", cursive;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-</head>
+  <body style="background-color: rgba(92, 169, 135, 0.501)">
+    <div class="mx-auto p-2" style="max-width: 1200px">
+      <div class="vstack gap-2 rounded-3 p-2 bg-light">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="#"></a>
+              <ul class="navbar-nav mx-auto gap-5">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fs-2 fw-bold"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-2 fw-bold" href="Experience.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-2 fw-bold" href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ..... -->
+        <div class="d-flex mx-auto">
+          <img
+            src="image/6512.jpg"
+            width="220"
+            height="220"
+            style="object-fit: cover"
+            class="border border- rounded-circle"
+          />
+          <div class="vstack ms-4 p-3" style="width: 600px">
+            <p class="fw-bold fs-2">Surabordin Ngaosai</p>
+            <p class="fs-5">
+              Hi, my name is Surabordin Ngaosai. I graduated from
+              RangseeVittayaSchool.Now I'm Studying at Chiang Mai University in
+              the Faculty of Engineering Computers. I like programming and
+              learning
+            </p>
+          </div>
+        </div>
+        <div class="vstack mx-auto" style="width: 600px">
+          <hr class="my=0" />
+          <p class="mx-auto fw-bold fs-2">My skil</p>
+          <!-- card  -->
+          <div
+            type="button"
+            class="card mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal1"
+          >
+            <img
+              src="image/c++.jpg"
+              class="card-img-top"
+              width="250px"
+              height="170px"
+              style="object-fit: cover"
+            />
+            <div class="card-body">
+              <p class="card-title fw-bold fs-3">C++ programming language</p>
+            
+            </div>
+          </div>
 
-<body>
-
-
-</body>
-
+          <div
+            type="button"
+            class="card mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal2"
+          >
+            <img
+              src="image/scratch.jpg"
+              class="card-img-top"
+              width="250px"
+              height="170px"
+              style="object-fit: cover"
+            />
+            <div class="card-body">
+              <p class="card-title fw-bold fs-3">Scratch</p>
+           
+            </div>
+          </div>
+    <!-- Modal c++ -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel1">C++ programming language</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"> <img src="image/c++code.png" width="250px"
+            height="170px"
+            style="object-fit: cover"
+           > <br> I used to study c++ in my first year of college. I believe that c++ is a good foundation for writing further developments in various computer languages.</div>
+        </div>
+      </div>
+    </div>
+      <hr class="my=0" />
+      <p class="mx-auto fw-bold fs-2">My Hobby</p>
+      <div
+        class="card mb-3"
+      >
+        <img
+          src="image/valorantLogo.jpg"
+          class="card-img-top"
+          width="250px"
+          height="170px"
+          style="object-fit: cover"
+        />
+        <div class="card-body">
+          <p class="card-title fw-bold fs-3">Playing Valorant</p>
+        
+        </div>
+      </div>
+    <!-- Modal scratch -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel2">Scratch</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"><img src="image/scratchdrawn.jpg.png" width="250px"
+            height="170px"
+            style="object-fit: cover"
+           > <br>Scratch is a language I learned in my first year in college, it taught me how to code for beginners to better understand algorithms.</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
